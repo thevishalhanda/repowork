@@ -1,0 +1,16 @@
+.inputRounded .MuiOutlinedInput-root {
+	border-radius: 10px;
+  }
+
+.MuiSelect-outlined.MuiSelect-outlined{
+  height:24px
+}
+
+.MuiInputBase-input{
+  width: 0%;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+ text-align: left;
+ font-size: 14px;
+}
