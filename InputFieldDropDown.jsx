@@ -14,37 +14,33 @@ export const InputFieldDropDown = () => {
 
     const currencies = [
         {
-          value: 'USD',
-          label: '$',
+          value: 'CNI',
+          label: 'CNI',
         },
         {
-          value: 'EUR',
-          label: '€',
+          value: 'DNI',
+          label: 'DNI',
         },
         {
-          value: 'BTC',
-          label: '฿',
+          value: 'Passporte',
+          label: 'Passporte',
         },
-        {
-          value: 'JPY',
-          label: '¥',
-        },
+        
       ];
       
   
     return (
         <TextField
-        id="outlined-select-currency-native"
+        id="outlied"
         select
-        label="Native select"
         value={currency}
         variant="outlined"
         className = "inputRounded"
         placeholder="ID"
-        size = "small"
+        label = "IDTYPE"
         onChange={handleChange}
-        error = {true}
-        helperText = "HELLO SIR"
+        margin = "dense"
+    
         style = {
             {
                 width:"70%",
@@ -52,32 +48,29 @@ export const InputFieldDropDown = () => {
 
             }
         }
-        SelectProps={{
-          native: true,
-        }}
+        
 
         InputLabelProps={{
           style: {
-            fontSize: 16,
+            fontSize: 14,
             backgroundColor: "#FFF",
-            paddingLeft: 4,
-            paddingRight: 4,
+            padding: "0 10px",
+          
             color: "#383838",
-            margin:"0% 0% 0% 0%"
+            
           },
         }}
         inputProps={{
           style: {
             width: "100%",
-            fontSize: 14,
-            height: 45,
-            padding: "0 14px",
-            fontWeight: "bold",
+            fontSize: 12,
+            height:44,
+            fontWeight:"bold"
           },
         }}
         FormHelperTextProps={{
           style:{
-              lineHeight:1
+              lineHeight:"relative",
           }
           
         }}
